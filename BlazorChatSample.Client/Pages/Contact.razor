@@ -1,0 +1,41 @@
+﻿@page "/contact"
+<link href="~/css/StyleSheetContact.css" />
+
+<PageTitle>Contact form</PageTitle>
+<h2>Send us a message:</h2>
+
+<div class="container">
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required="required">
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <label>First name</label>
+            <input type="text" class="form-control" id="nameLabel" placeholder="First name" required="required">
+        </div>
+        <div class="col">
+            <label>Last name</label>
+            <input type="text" class="form-control" id="lastNameLabel" placeholder="Last name" required="required">
+        </div>
+        <div class="col">
+            <label>Phone</label>
+            <input type="tel" class="form-control" placeholder="Phone">
+            <small style="color: #563d7c;">*If your phone number is not danish, you'll be contacted via e-mail</small>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1" required="required">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    </form>
+
+<br />
+<button type="button" class="button">Send</button>
+<button type="button" class="button">Cancel</button>
+</div>
+
+@code {
+
+}
